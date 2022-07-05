@@ -25,51 +25,52 @@ Order: [ Main BLOCK Class ] [ other BLOCK Classes ] [ Utility/Design Classes ]
 Logical choice to make things look more organized, but they are not fundamental -->
 <body>
     <!-- Header: Inline: icon + title -->
-    <header class="main-header">
+    <header class="[ main-header ] [ background-primary ]">
         <img class="header-icon" src="./img/Logo.png" alt="Logo di Toboolist" >
         <h1 id="title">Toboolist</h1>
     </header>
 
     <main>
-        <div class="container">
+        <div class="[ container ] [ container-design background-primary ]">
             <!-- Top buttons options -->
             <nav class="options">
-                <input type="button" value="Add Tastk" id="options__active" class="options__button" />
-                <input type="button" value="Add Section" id="options__inactive" class="options__button" />
+                <input type="button" value="Add Task" id="options__active" class="[ options__button ] [ background-primary ]" />
+                <input type="button" value="Add Section" id="options__inactive" class="[ options__button ] [ background-primary ]" />
             </nav>
             
             <!-- List of Tasks -->
-            <h2 class="[ tasks-list ] [ hidden-content ]">List of Tasks</h2>
+            <h2 class="hidden-content">List of Tasks</h2>
+            <!-- <div class="task-list"></div> -->
 
-                <!-- New Task -->
-                <details open class="task-list__heading">
-                    <summary>New Task</summary>
-                    <ol>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Quarterly Newsletter <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
-                    </ol>
-                </details>
+            <!-- New Task -->
+            <details open>
+                <summary class="task-list__heading">New Task</summary>
+                <ol>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Quarterly Newsletter <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                </ol>
+            </details>
 
-                <!-- Today -->
-                <details open class="task-list__heading">
-                    <summary>Today</summary>
-                    <ol>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Recruiting blog post <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Mobile app launch <span class="[ task__category ] [ q1-goals-task ]">Q1 Goals</span></li>
-                        <li class="task"><span class="task__todo">&#x2717;</span> Interview John H. <span class="[ task__category ] [ recruiting-task ]">Recruiting</span></li>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ mobile-task ]">Mobile</span></li>
-                    </ol>
-                </details>
+            <!-- Today -->
+            <details open>
+                <summary class="task-list__heading">Today</summary>
+                <ol>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Recruiting blog post <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Mobile app launch <span class="[ task__category ] [ q1-goals-task ]">Q1 Goals</span></li>
+                    <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2717;</span> Interview John H. <span class="[ task__category ] [ recruiting-task ]">Recruiting</span></li>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ mobile-task ]">Mobile</span></li>
+                </ol>
+            </details>
 
-                <!-- Upcoming -->
-                <details open class="task-list__heading">
-                    <summary>Upcoming</summary>
-                    <ol>
-                        <li class="task"><span class="task__completed">&#x2717;</span> Schedule meeting with Alex <span class="task__category-none"></span></li>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Homepage refresh <span class="[ task__category ] [ website-task ]">Website</span></li>
-                        <li class="task"><span class="task__todo">&#x2713;</span> Interview John H. <span class="[ task__category ] [ sales-task ]">Sales</span></li>
-                        <li class="task"><span class="task__completed">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
-                    </ol>
-                </details>
+            <!-- Upcoming -->
+            <details open>
+                <summary class="task-list__heading">Upcoming</summary>
+                <ol>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2717;</span> Schedule meeting with Alex <span class="task__category-none"></span></li>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Homepage refresh <span class="[ task__category ] [ website-task ]">Website</span></li>
+                    <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2713;</span> Interview John H. <span class="[ task__category ] [ sales-task ]">Sales</span></li>
+                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                </ol>
+            </details>
         </div>
     </main>
 </body>

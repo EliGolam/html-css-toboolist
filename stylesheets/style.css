@@ -1,18 +1,19 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(87, 242, 178, 1);
+    --clr-primary: rgba(67, 196, 255, 1);
     --clr-secondary: rgba(250, 174, 95, 1);
 
-    --clr-neutral-white: rgba(246, 242, 233, 1);
+    --clr-neutral-white: rgb(250, 248, 244);
     --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(238, 241, 241, 1);
+    --clr-neutral-grey: rgba(234, 241, 241, 1);
+    --clr-neutral-grey-darker: rgb(217, 224, 224);
 
     --fontfamily-primary: Arial, Helvetica, sans-serif;
 
     --fontweight-thin: 200;
-    --fontweight-normal: 400;
-    --fontweight-heavy: 700;
+    --fontweight-normal: 500;
+    --fontweight-heavy: 800;
 
     --fontsize-small: 0.7rem;
     --fontsize-normal: 1.1rem;
@@ -24,28 +25,57 @@
 /* Page Layout choices */
 body {
     background-color: var(--clr-neutral-grey);
+    color: var(--clr-neutral-black);
     font-family: var(--fontfamily-primary);
+    font-size: var(--fontsize-normal);
+    font-weight: var(--fontweight-normal);
 }
 
-.main-header {
-    padding: 0.7rem 1.5rem;
+.main-header { padding: 0.7rem 1.5rem; }
+
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem 3rem 5rem 3rem;
 }
 /* Component Layout choices */
-#title {
-    display: inline-block;
-}
+#title { display: inline-block; }
 
 .header-icon {
     display: inline-block;
     vertical-align: top;
 }
      
+.options {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--clr-neutral-grey);
+}
+
+.hidden-content { display: none; }
+
+.task-list__heading { margin-top: 2rem; margin-bottom: 0.3rem;
+font-weight: var(--fontweight-heavy); }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
-/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
-.background-primary { background: var(--clr-neutral-white); }
+.container-design { border-radius: 18px; }
 
-.background-secondary { background: var(--clr-neutral-black); }
+.options__button {
+    font-size: var(--fontsize-small);
+    color: var(--clr-neutral-grey-darker);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 3px solid var(--clr-neutral-grey-darker);
+}
+
+#options__active {
+    background-color: var(--clr-primary);
+    border: 0;
+}
+
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-primary { background-color: var(--clr-neutral-white); }
+
+.background-secondary { background-color: var(--clr-neutral-grey); }
 
 .color-primary { color: var(--clr-neutral-black); }
 
