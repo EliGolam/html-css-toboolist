@@ -6,7 +6,7 @@
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(88, 89, 90, 1);
+    --clr-neutral-grey: rgba(238, 241, 241, 1);
 
     --fontfamily-primary: Arial, Helvetica, sans-serif;
 
@@ -20,3 +20,41 @@
     --fontsize-title: 3rem;
 }
 
+/* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
+/* Page Layout choices */
+body {
+    background-color: var(--clr-neutral-grey);
+    font-family: var(--fontfamily-primary);
+}
+
+.main-header {
+    padding: 0.7rem 1.5rem;
+}
+/* Component Layout choices */
+#title {
+    display: inline-block;
+}
+
+.header-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+     
+
+/* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-primary { background: var(--clr-neutral-white); }
+
+.background-secondary { background: var(--clr-neutral-black); }
+
+.color-primary { color: var(--clr-neutral-black); }
+
+.color-secondary {  color: var(--clr-neutral-white); }
+
+.color-neutral { color: var(--clr-neutral-grey); }
+
+/* BLOCKS: component specific rules */
+
+/* EXCEPTIONS: variations to a block */
+
+/* MEDIA QUERIES: not doing yet */
