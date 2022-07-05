@@ -33,10 +33,31 @@ Logical choice to make things look more organized, but they are not fundamental 
     <main>
         <div class="container">
             <!-- Top buttons -->
+            <nav class="options">
+                <input type="button" value="Add Tastk" id="options__active" class="options__button" />
+                <input type="button" value="Add Section" id="options__inactive" class="options__button" />
+            </nav>
+            
             <!-- List of Tasks -->
+            <h2 class="[ tasks-list ] [ hidden-content ]">List of Tasks</h2>
+
                 <!-- New Task -->
+                <details>
+                    <summary>New Task</summary>
+                    <ol>
+                        <li></li>
+                    </ol>
+                </details>
+
                 <!-- Today -->
+                <details>
+                    <summary>Today</summary>
+                </details>
+
                 <!-- Upcoming -->
+                <details>
+                    <summary>Upcoming</summary>
+                </details>
         </div>
     </main>
 </body>
