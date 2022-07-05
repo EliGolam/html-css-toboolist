@@ -2,7 +2,8 @@
 :root {
     /* Website Color Scheme */
     --clr-primary: rgba(67, 196, 255, 1);
-    --clr-secondary: rgba(250, 174, 95, 1);
+    --clr-secondary-green: rgb(76, 184, 99);
+
 
     --clr-neutral-white: rgb(250, 248, 244);
     --clr-neutral-black: rgba(25, 25, 25, 1);
@@ -53,8 +54,7 @@ body {
 
 .hidden-content { display: none; }
 
-.task-list__heading { margin-top: 2rem; margin-bottom: 0.3rem;
-font-weight: var(--fontweight-heavy); }
+.task-list__heading { margin-top: 2rem; margin-bottom: 0.3rem; font-weight: var(--fontweight-heavy); }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
 .container-design { border-radius: 18px; }
@@ -72,6 +72,19 @@ font-weight: var(--fontweight-heavy); }
     border: 0;
 }
 
+.task__status {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    border: 2px solid;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+.task-completed {
+    border-color: var(--clr-secondary-green);
+    color: var(--clr-secondary-green);
+}
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
 
