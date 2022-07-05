@@ -42,21 +42,33 @@ Logical choice to make things look more organized, but they are not fundamental 
             <h2 class="[ tasks-list ] [ hidden-content ]">List of Tasks</h2>
 
                 <!-- New Task -->
-                <details>
+                <details open class="task-list__heading">
                     <summary>New Task</summary>
                     <ol>
-                        <li></li>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Quarterly Newsletter <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
                     </ol>
                 </details>
 
                 <!-- Today -->
-                <details>
+                <details open class="task-list__heading">
                     <summary>Today</summary>
+                    <ol>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Recruiting blog post <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Mobile app launch <span class="[ task__category ] [ q1-goals-task ]">Q1 Goals</span></li>
+                        <li class="task"><span class="task__todo">&#x2717;</span> Interview John H. <span class="[ task__category ] [ recruiting-task ]">Recruiting</span></li>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ mobile-task ]">Mobile</span></li>
+                    </ol>
                 </details>
 
                 <!-- Upcoming -->
-                <details>
+                <details open class="task-list__heading">
                     <summary>Upcoming</summary>
+                    <ol>
+                        <li class="task"><span class="task__completed">&#x2717;</span> Schedule meeting with Alex <span class="task__category-none"></span></li>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Homepage refresh <span class="[ task__category ] [ website-task ]">Website</span></li>
+                        <li class="task"><span class="task__todo">&#x2713;</span> Interview John H. <span class="[ task__category ] [ sales-task ]">Sales</span></li>
+                        <li class="task"><span class="task__completed">&#x2713;</span> Summit update to mobile storefronts <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                    </ol>
                 </details>
         </div>
     </main>
