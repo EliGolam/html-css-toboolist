@@ -54,7 +54,7 @@ body {
      
 .options {
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--clr-neutral-grey);
+    border-bottom: 2px solid red;
 }
 
 .hidden-content { display: none; }
@@ -67,6 +67,28 @@ body {
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
 .container-design { border-radius: 18px; }
+
+.editorial-task { background-color: var(--clr-primary); }
+.q1-goals-task { background-color: var(--clr-secondary-purple); }
+.recruiting-task { background-color: var(--clr-secondary-green); }
+.mobile-task { background-color: var(--clr-secondary-orange); }
+.website-task { background-color: var(--clr-secondary-pink); }
+.sales-task { background-color: var(--clr-secondary-lime); }
+
+
+
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-primary { background-color: var(--clr-neutral-white); }
+
+.background-secondary { background-color: var(--clr-neutral-grey); }
+
+.color-primary { color: var(--clr-neutral-black); }
+
+.color-secondary {  color: var(--clr-neutral-white); }
+
+.color-neutral { color: var(--clr-neutral-grey); }
+
+/* BLOCKS: component specific rules */
 
 .options__button {
     font-size: var(--fontsize-small);
@@ -93,6 +115,8 @@ body {
     vertical-align: middle;
 }
 
+.task-description { vertical-align: middle;}
+
 .task-completed {
     border-color: var(--clr-secondary-green);
     color: var(--clr-secondary-green);
@@ -111,28 +135,6 @@ body {
 
     vertical-align: middle;
 }
-
-.editorial-task { background-color: var(--clr-primary); }
-.q1-goals-task { background-color: var(--clr-secondary-purple); }
-.recruiting-task { background-color: var(--clr-secondary-green); }
-.mobile-task { background-color: var(--clr-secondary-orange); }
-.website-task { background-color: var(--clr-secondary-pink); }
-.sales-task { background-color: var(--clr-secondary-lime); }
-
-
-
-/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
-.background-primary { background-color: var(--clr-neutral-white); }
-
-.background-secondary { background-color: var(--clr-neutral-grey); }
-
-.color-primary { color: var(--clr-neutral-black); }
-
-.color-secondary {  color: var(--clr-neutral-white); }
-
-.color-neutral { color: var(--clr-neutral-grey); }
-
-/* BLOCKS: component specific rules */
 
 /* EXCEPTIONS: variations to a block */
 
