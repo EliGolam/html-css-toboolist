@@ -70,6 +70,7 @@ body {
 
 .options__button {
     font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-heavy);
     color: var(--clr-neutral-grey-darker);
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -78,12 +79,13 @@ body {
 
 #options__active {
     background-color: var(--clr-primary);
-    border: 0;
+    border-color: var(--clr-primary);
 }
 
 .task__status {
     font-size: 0.5rem;
-    padding: 0.3rem;
+    /* padding: 0.3rem; */
+    padding: 0.2rem 0.3rem;
     border: 2px solid;
     border-radius: 50%;
     margin-right: 0.5rem;
@@ -106,6 +108,8 @@ body {
     font-size: var(--fontsize-small);
     border-radius: 8px;
     color: var(--clr-neutral-white);
+
+    vertical-align: middle;
 }
 
 .editorial-task { background-color: var(--clr-primary); }
