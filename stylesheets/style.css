@@ -2,7 +2,12 @@
 :root {
     /* Website Color Scheme */
     --clr-primary: rgba(67, 196, 255, 1);
-    --clr-secondary-green: rgb(76, 184, 99);
+    --clr-secondary-green: rgb(73, 204, 154);
+    --clr-secondary-red: rgb(184, 51, 42);
+    --clr-secondary-purple: rgb(112, 49, 148);
+    --clr-secondary-orange: rgb(250, 149, 33);
+    --clr-secondary-pink: rgb(139, 35, 96);
+    --clr-secondary-lime: rgb(120, 189, 55);
 
 
     --clr-neutral-white: rgb(250, 248, 244);
@@ -54,6 +59,10 @@ body {
 
 .hidden-content { display: none; }
 
+.task {
+    margin: 1rem auto;
+}
+
 .task-list__heading { margin-top: 2rem; margin-bottom: 0.3rem; font-weight: var(--fontweight-heavy); }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
@@ -77,6 +86,7 @@ body {
     padding: 0.3rem;
     border: 2px solid;
     border-radius: 50%;
+    margin-right: 0.5rem;
 
     vertical-align: middle;
 }
@@ -85,6 +95,28 @@ body {
     border-color: var(--clr-secondary-green);
     color: var(--clr-secondary-green);
 }
+
+.task-todo {
+    border-color: var(--clr-secondary-red);
+    color: var(--clr-secondary-red);
+}
+
+.task__category {
+    padding: 0.3rem 0.6rem;
+    font-size: var(--fontsize-small);
+    border-radius: 8px;
+    color: var(--clr-neutral-white);
+}
+
+.editorial-task { background-color: var(--clr-primary); }
+.q1-goals-task { background-color: var(--clr-secondary-purple); }
+.recruiting-task { background-color: var(--clr-secondary-green); }
+.mobile-task { background-color: var(--clr-secondary-orange); }
+.website-task { background-color: var(--clr-secondary-pink); }
+.sales-task { background-color: var(--clr-secondary-lime); }
+
+
+
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
 
