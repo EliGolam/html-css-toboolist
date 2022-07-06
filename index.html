@@ -31,6 +31,7 @@ Logical choice to make things look more organized, but they are not fundamental 
     </header>
 
     <main>
+        <!-- div CONTAINER -->
         <div class="[ container ] [ container-design background-primary ]">
             <!-- Top buttons options -->
             <nav class="options">
@@ -39,40 +40,52 @@ Logical choice to make things look more organized, but they are not fundamental 
                 <input type="button" value="Add Section" id="options__inactive" class="[ options__button ] [ background-primary ]" />
             </nav>
             
-            <!-- List of Tasks -->
-            <h2 class="hidden-content">List of Tasks</h2>
-            <!-- <div class="task-list"></div> -->
-
-            <!-- New Task -->
-            <details open>
-                <summary class="task-list__heading">New Task</summary>
-                <ol>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Quarterly Newsletter <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+            <!-- Tasks -->
+            <section>
+                <h2 class="hidden-content">List of Tasks</h2>
+                
+                <!-- List of Tasks -->
+                <ol id="list-of-tasks">
+                    <li>
+                        <!-- New Task -->
+                        <details open>
+                            <summary class="task-list__title"><h3 class="task-list__heading">New Task</h3></summary>
+                            <ol>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Quarterly Newsletter</span> <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <!-- Today -->
+                        <details open>
+                            <summary class="task-list__title"><h3 class="task-list__heading">Today</h3></summary>
+                            <ol>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Recruiting blog post</span> <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Mobile app launch</span><span class="[ task__category ] [ q1-goals-task ]">Q1 Goals</span></li>
+                                <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2717;</span> <span class="task__description">Interview John H.</span> <span class="[ task__category ] [ recruiting-task ]">Recruiting</span></li>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Summit update to mobile storefronts</span><span class="[ task__category ] [ mobile-task ]">Mobile</span></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li>
+                        <!-- Upcoming -->
+                        <details open>
+                            <summary class="task-list__title"><h3 class="task-list__heading">Upcoming</h3></summary>
+                            <ol>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2717;</span> <span class="task__description">Schedule meeting with Alex</span> <span class="task__category-none"></span></li>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Homepage refresh</span> <span class="[ task__category ] [ website-task ]">Website</span></li>
+                                <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2713;</span><span class="task__description"> Interview John H.</span> <span class="[ task__category ] [ sales-task ]">Sales</span></li>
+                                <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Summit update to mobile storefronts</span> <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
+                            </ol>
+                        </details>
+                    </li>
                 </ol>
-            </details>
+                <!-- end List of Tasks --> 
+            </section>
+            <!-- end Tasks -->    
 
-            <!-- Today -->
-            <details open>
-                <summary class="task-list__heading">Today</summary>
-                <ol>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Recruiting blog post</span> <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Mobile app launch</span><span class="[ task__category ] [ q1-goals-task ]">Q1 Goals</span></li>
-                    <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2717;</span> <span class="task__description">Interview John H.</span> <span class="[ task__category ] [ recruiting-task ]">Recruiting</span></li>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Summit update to mobile storefronts</span><span class="[ task__category ] [ mobile-task ]">Mobile</span></li>
-                </ol>
-            </details>
-
-            <!-- Upcoming -->
-            <details open>
-                <summary class="task-list__heading">Upcoming</summary>
-                <ol>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2717;</span> <span class="task__description">Schedule meeting with Alex</span> <span class="task__category-none"></span></li>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Homepage refresh</span> <span class="[ task__category ] [ website-task ]">Website</span></li>
-                    <li class="task"><span class="[ task__status ] [ task-todo ]">&#x2713;</span><span class="task__description"> Interview John H.</span> <span class="[ task__category ] [ sales-task ]">Sales</span></li>
-                    <li class="task"><span class="[ task__status ] [ task-completed ]">&#x2713;</span> <span class="task__description">Summit update to mobile storefronts</span> <span class="[ task__category ] [ editorial-task ]">Editorial</span></li>
-                </ol>
-            </details>
         </div>
+        <!-- end div CONTAINER -->
     </main>
 </body>
 
